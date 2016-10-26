@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5regexp</title>
+</head>
+<body>
+	<div id="content">当前操作的是es6</div>
+	<input id="input-es6" type="button" value="es6">
+	<input id="input-es5" type="button" value="es5">
+	<script type="text/javascript" src="../../../../framework/jquery/jquery.min.js"></script>
+	<script id="let_const" type="text/javascript" src="../src/5regexp.js"></script>
+	<script type="text/javascript">
+		function loadScript() {
+			console.clear();
+			var $this = $(this);
+			var $content = $("#content");
+			var script= document.createElement('script');
+			script.type= 'text/javascript';
+			if ( $this.val() == "es6" ) {
+				console.log("************************** es6 *******************************");
+				$content.html("当前操作的是es6");
+				script.src= "../src/5regexp.js";
+			} else {
+				console.log("************************** es5 *******************************");
+				$content.html("当前操作的是es5");
+				script.src= "5regexp.js";
+			}
+			$("body").append(script);
+		}
+		$("#input-es6").on("click", loadScript);
+		$("#input-es5").on("click", loadScript);
+	</script>
+</body>
+</html>
