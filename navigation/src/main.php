@@ -8,6 +8,7 @@
 	<div>
 		<a href="./inspiration/browse_mind_map/">计算机</a>
 		<a href="./inspiration/browse_mind_map/">前端</a>
+		<a href="./inspiration/browse_mind_map/">python</a>
 	</div>
 	<script type="text/javascript">
 		

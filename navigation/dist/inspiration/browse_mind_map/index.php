@@ -6,9 +6,12 @@
     <link type="text/css" rel="stylesheet" href="http://localhost/test-new/navigation/dist/css/fire_ui.css">
     <link type="text/css" rel="stylesheet" href="http://localhost/test-new/framework/jsmind/style/jsmind.css">
     <style type="text/css">
+    	html, body {
+    		height: 100%;
+    	}
         #jsmind_container {
-            width:800px;
-            height:500px;
+            width:100%;
+            height:100%;
             border:solid 1px #ccc;
             /*background:#f4f4f4;*/
             background:#f4f4f4;
@@ -48,6 +51,14 @@
 	                {"id": "sub3112", "parentid": "sub311", "topic": "变量的解构赋值"},
 	                {"id": "sub3113", "parentid": "sub311", "topic": "字符串的扩展"},
 	                {"id": "sub3114", "parentid": "sub311", "topic": "正则的扩展"},
+	                {"id": "sub4", "parentid": "root", "topic": "python"},
+	                {"id": "sub42", "parentid": "sub4", "topic": "4.2字符串和编码"},
+	                {"id": "sub43", "parentid": "sub4", "topic": "4.3使用list和tuple"},
+	                {"id": "sub44", "parentid": "sub4", "topic": "4.4条件判断"},
+	                {"id": "sub45", "parentid": "sub4", "topic": "4.5循环"},
+	                {"id": "sub46", "parentid": "sub4", "topic": "4.6使用dict和set"},
+	                {"id": "sub51", "parentid": "sub4", "topic": "5.1调用函数"},
+	                {"id": "sub52", "parentid": "sub4", "topic": "5.2定义函数"},
 	                /*{"id":"sub1", "parentid":"root", "topic":"sub1", "background-color":"#0000ff"},
 	                {"id":"sub11", "parentid":"sub1", "topic":"sub11"},
 	                {"id":"sub12", "parentid":"sub1", "topic":"sub12"},
