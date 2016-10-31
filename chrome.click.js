@@ -5,3 +5,5 @@ setInterval(function() {
 		document.write(currentHours);
 	}
 }, 1000);
+
+

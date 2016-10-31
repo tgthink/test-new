@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>defineproperty</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var o = {}; // 创建一个新对象
+		// Example of an object property added with defineProperty with a data property descriptor
+		Object.defineProperty(
+			o,
+			"a",
+			{
+				value : 37,
+				writable : true,
+				enumerable : true,
+				configurable : true
+			}
+		);
+		// 对象o拥有了属性a，值为37
+		// Example of an object property added with defineProperty with an accessor property descriptor
+		var bValue;
+		Object.defineProperty(
+			o,
+			"b",
+			{
+				get: function() {
+					return bValue;
+				},
+				set : function(newValue) {
+					bValue = newValue;
+				},
+		        enumerable : true,
+		        configurable : true
+		    }
+		);
+		o.b = 38;
+		console.log("bValue: ", bValue);
+		console.log("b: ", o.b);
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
