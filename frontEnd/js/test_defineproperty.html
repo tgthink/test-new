@@ -1,9 +1,15 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>defineproperty</title>
+	<meta charset="UTF-8">
+	<title>defineproperty测试</title>
 </head>
 <body>
+	<div>
+	    <p>你好，<span id='nickName'></span></p>
+	    <div id="introduce"></div>
+	    <button id="aaaaa" onclick="aaaaa()">aaaaa</button>
+	</div>
 	<script type="text/javascript">
 		var o = {}; // 创建一个新对象
 		// Example of an object property added with defineProperty with a data property descriptor
@@ -37,6 +43,35 @@
 		o.b = 38;
 		console.log("bValue: ", bValue);
 		console.log("b: ", o.b);
+
+		//视图控制器
+		var userInfo = {};
+		Object.defineProperty(userInfo, "nickName", {
+		    get: function(){
+		        return document.getElementById('nickName').innerHTML;
+		    },
+		    set: function(nick){
+		        document.getElementById('nickName').innerHTML = nick;
+		    }
+		});
+		Object.defineProperty(userInfo, "introduce", {
+		    get: function(){
+		        return document.getElementById('introduce').innerHTML;
+		    },
+		    set: function(introduce){
+		        document.getElementById('introduce').innerHTML = introduce;
+		    }
+		});
+
+		//数据
+		//todo 获取用户信息的代码
+
+		userInfo.nickName = "xxx";
+		userInfo.introduce = "我是xxx，我来自云南，..."
+		var aaaaa = document.getElementById("aaaaa");
+		aaaaa.onclick = function() {
+			userInfo.nickName = Math.random();
+		}
 	</script>
 </body>
 </html>

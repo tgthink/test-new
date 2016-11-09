@@ -4,7 +4,7 @@
 module.exports = {
   //资源路径配置
   oPrefixUrl: {
-    develop: "http://localhost/test-new/",//开发前缀路径
+    develop: "http://localhost:81/test-new/",//开发前缀路径
     production: ""//发布前缀路径
   },
   //环境信息
