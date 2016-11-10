@@ -8,4 +8,5 @@
    echo "Server is running: " . $redis->ping();
    print_r($redis->keys("*"));
    echo $redis->get("already_get_queue");
+   echo "=============================";
 ?>
