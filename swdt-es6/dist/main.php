@@ -6,9 +6,8 @@
 </head>
 <body>
 	<div>
-		<a href="./inspiration/browse_mind_map/">计算机</a>
-		<a href="./inspiration/browse_mind_map/">前端</a>
-		<a href="./inspiration/browse_mind_map/">python</a>
+		<a href="./mind_map.php?id=1">音标导图</a>
+		<a href="./mind_map.php?id=2">首字母导图</a>
 	</div>
 	<script type="text/javascript">
 		

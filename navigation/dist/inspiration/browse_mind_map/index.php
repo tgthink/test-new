@@ -55,7 +55,9 @@
 	                {"id": "sub3115", "parentid": "sub311", "topic": "数值的扩展"},
 	                {"id": "sub3116", "parentid": "sub311", "topic": "数组的扩展"},
 	                {"id": "sub3117", "parentid": "sub311", "topic": "8.函数的扩展"},
-
+	                {"id": "sub3118", "parentid": "sub311", "topic": "9.对象的扩展"},
+					{"id": "sub3119", "parentid": "sub311", "topic": "10.Symbol"},
+					{"id": "sub3120", "parentid": "sub311", "topic": "11.Proxy和Reflect"},
 
 	                {"id": "sub4", "parentid": "root", "topic": "python"},
 	                {"id": "sub42", "parentid": "sub4", "topic": "4.2字符串和编码"},
@@ -67,6 +69,7 @@
 	                {"id": "sub52", "parentid": "sub4", "topic": "5.2定义函数"},
 	                {"id": "sub53", "parentid": "sub4", "topic": "5.3函数的参数"},
 	                {"id": "sub54", "parentid": "sub4", "topic": "5.4递归函数"},
+
 	                /*{"id":"sub1", "parentid":"root", "topic":"sub1", "background-color":"#0000ff"},
 	                {"id":"sub11", "parentid":"sub1", "topic":"sub11"},
 	                {"id":"sub12", "parentid":"sub1", "topic":"sub12"},

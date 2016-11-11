@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^main.html$ main.php?&%{QUERY_STRING}
