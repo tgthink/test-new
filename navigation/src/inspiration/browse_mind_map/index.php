@@ -35,9 +35,9 @@
 	    function load_jsmind(){
 	        var mind = {
 	            "meta":{
-	                "name":"demo",
-	                "author":"hizzgdev@163.com",
-	                "version":"0.2",
+	                "name": "demo",
+	                "author": "hizzgdev@163.com",
+	                "version": "0.2",
 	            },
 	            "format":"node_array",
 	            "data":[
@@ -58,6 +58,7 @@
 	                {"id": "sub3118", "parentid": "sub311", "topic": "9.对象的扩展"},
 					{"id": "sub3119", "parentid": "sub311", "topic": "10.Symbol"},
 					{"id": "sub3120", "parentid": "sub311", "topic": "11.Proxy和Reflect"},
+					{"id": "sub3121", "parentid": "sub311", "topic": "12.Set和Map数据结构"},
 
 	                {"id": "sub4", "parentid": "root", "topic": "python"},
 	                {"id": "sub42", "parentid": "sub4", "topic": "4.2字符串和编码"},

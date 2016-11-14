@@ -6,7 +6,7 @@ module.exports = {
   oUrl: {
     //开发环境路径
     develop: {
-      prefix:       "http://localhost:81/test-new/",  //开发环境资源前缀路径
+      prefix:       "http://192.168.3.213:81/test-new/",  //开发环境资源前缀路径
       request_url:  "",                         //开发环境接口路径
       main_url:     "",
       login_url:    ""

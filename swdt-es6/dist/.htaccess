@@ -1,2 +1,3 @@
 RewriteEngine On
-RewriteRule ^main.html$ main.php?&%{QUERY_STRING}
+RewriteRule ^(.*)\.html$ $1.php?&%{QUERY_STRING}
+##aaaaaaaaaaaaaa
