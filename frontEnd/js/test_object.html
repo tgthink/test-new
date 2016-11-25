@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function isObjectValueEqual(a, b) {
+            // Of course, we can do it use for in 
+            // Create arrays of property names
+            var aProps = Object.getOwnPropertyNames(a);
+            console.log(Object.getOwnPropertyNames(a).sort());
+            var bProps = Object.getOwnPropertyNames(b);
+         
+            // If number of properties is different,
+            // objects are not equivalent
+            if (aProps.length != bProps.length) {
+                return false;
+            }
+            for (var i = 0; i < aProps.length; i++) {
+                var propName = aProps[i];
+                // If values of same property are not equal,
+                // objects are not equivalent
+                console.log(propName);
+                if (typeof a[propName] == "object") {
+                    if ( isObjectValueEqual(a[propName], b[propName]) ) {
+                        continue;
+                    } else {
+                        return false;
+                    }
+                } else if (a[propName] !== b[propName]) {
+                    return false;
+                }
+            }
+            console.log("==========================================");
+         
+            // If we made it this far, objects
+            // are considered equivalent
+            return true;
+        }
+         
+        var obj1 = {
+            name: "Benjamin",
+            sex : "male",
+            aaa : {},
+            bbb : {
+                b: 111,
+                bb: 222
+            },
+        };
+         
+        var obj2 = {
+            name: "Benjamin",
+            sex : "male",
+            aaa : {},
+            bbb : {
+                b: 111,
+                bb: 222
+            },
+        };
+         
+        //Outputs: true
+        console.log(isObjectValueEqual(obj1, obj2));
+    </script>
+</body>
+</html>

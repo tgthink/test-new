@@ -11,7 +11,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-    <link type="text/css" rel="stylesheet" href="http://192.168.3.213:81/test-new/framework/jsmind/style/jsmind.css">
+    <link type="text/css" rel="stylesheet" href="http://192.168.2.1:81/test-new/framework/jsmind/style/jsmind.css">
     <style type="text/css">
         #jsmind_container{
             width:800px;
@@ -24,8 +24,8 @@
 </head>
 <body>
 	<div id="jsmind_container"></div>
-	<script type="text/javascript" src="http://192.168.3.213:81/test-new/framework/jsmind/js/jsmind.js"></script>
-	<script type="text/javascript" src="http://192.168.3.213:81/test-new/framework/jsmind/js/jsmind.draggable.js"></script>
+	<script type="text/javascript" src="http://192.168.2.1:81/test-new/framework/jsmind/js/jsmind.js"></script>
+	<script type="text/javascript" src="http://192.168.2.1:81/test-new/framework/jsmind/js/jsmind.draggable.js"></script>
 	<script type="text/javascript">
 	    function load_jsmind(){
 	        var mind = {
