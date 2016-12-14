@@ -4,6 +4,8 @@ var gulp = require('gulp');
 var clean = require('gulp-clean');	//清空文件夹
 var webpack = require("gulp-webpack");
 var prefix = require('gulp-prefix');	//替换资源文件前缀路径
+var gulpSequence = require('gulp-sequence');	//制定了task的执行顺序
+
 var argv = require('yargs').argv;	//用于获取启动参数，针对不同参数，切换任务执行过程时需要
 
 var oEnvironment = fileConfig.oEnvironment;

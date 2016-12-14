@@ -76,6 +76,9 @@
 					{"id": "sub31217", "parentid": "sub311", "topic": "18.修饰器"},
 					{"id": "sub31218", "parentid": "sub311", "topic": "19.Module"},
 					{"id": "sub31219", "parentid": "sub311", "topic": "20.编程风格"},
+					{"id": "sub31220", "parentid": "sub311", "topic": "21.读懂 ECMAScript 规格"},
+					{"id": "sub31221", "parentid": "sub311", "topic": "22.二进制数组"},
+					{"id": "sub31222", "parentid": "sub311", "topic": "23.SIMD"},
 
 
 	                {"id": "sub4", "parentid": "root", "topic": "python"},
