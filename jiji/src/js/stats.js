@@ -39,12 +39,14 @@ var Stats = React.createClass({
 		return (
 			<div className="container-stats-bd" >
 				{/* <Publisher /> */}
+				<a href="demo.html" >跳转</a>
 				<Progress />
 			</div>
 		);
 	}
 });
 ReactDOM.render(<Stats />,  document.getElementById("container-stats"));
+
 // ReactDOM.render(
 //     <Publisher />,
 //     document.getElementById('container-stats')

@@ -46,6 +46,7 @@ var config = {
     },
     entry: {
         stats: './' + oEnvironment.source + '/js/stats.js',
+        demo: './' + oEnvironment.source + '/js/demo.js',
         //vendors: ['circleProgress'],
     },
     // webpack 打包后的输出文件的路径
@@ -106,6 +107,7 @@ var config = {
         }),
         new webpack.optimize.CommonsChunkPlugin("commons.js", [
             "stats",
+            //"demo",
         ]),
         new webpack.optimize.UglifyJsPlugin({
             compress: {

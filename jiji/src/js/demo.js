@@ -11,9 +11,9 @@
 // import ReactDOM from 'react-dom';
 const React = require('react');
 const ReactDOM = require('react-dom');
-import style from './stats.less';
-import Publisher from './components/Publisher/Publisher.jsx';
-import Progress from './components/Publisher/Progress.jsx';
+// import style from './stats.less';
+// import Publisher from './components/Publisher/Publisher.jsx';
+// import Progress from './components/Publisher/Progress.jsx';
 //import ChipExampleArray from './components/Publisher/ChipExampleArray.jsx'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -24,14 +24,14 @@ import MyAwesomeReactComponent from './components/Publisher/MyAwesomeReactCompon
 // 	document.getElementById('container-stats')
 // );
 // document.write("cccccccccccccccccccccccccc");
-// @ Stats
+// @ Demo
 const App = () => (
   <MuiThemeProvider>
     <MyAwesomeReactComponent />
   </MuiThemeProvider>
 );
 
-var Stats = React.createClass({
+var Demo = React.createClass({
 	getInitialState: function() {
 		return {
 
@@ -41,13 +41,17 @@ var Stats = React.createClass({
 		return (
 			<div className="aaaaaaaaaaaa" >
 				<App />
-				<Publisher />
-				<Progress />
+				{/*<Publisher />
+				<Progress />*/}
 			</div>
 		);
 	}
 });
-ReactDOM.render(<Stats />,  document.getElementById("container-stats"));
+ReactDOM.render(<Demo />,  document.getElementById("container-demo"));
+alert("???????????????????????")
+window.onpopstate = function(event) {
+	alert("location: " + document.location + ", state: " + JSON.stringify(event.state));
+};
 // ReactDOM.render(
 //     <Publisher />,
 //     document.getElementById('container-stats')
