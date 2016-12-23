@@ -80,7 +80,6 @@
 					{"id": "sub31221", "parentid": "sub311", "topic": "22.二进制数组"},
 					{"id": "sub31222", "parentid": "sub311", "topic": "23.SIMD"},
 
-
 	                {"id": "sub4", "parentid": "root", "topic": "python"},
 	                {"id": "sub42", "parentid": "sub4", "topic": "4.2字符串和编码"},
 	                {"id": "sub43", "parentid": "sub4", "topic": "4.3使用list和tuple"},
