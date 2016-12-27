@@ -35,17 +35,26 @@
 	    function load_jsmind(){
 	        var mind = {
 	            "meta":{
-	                "name":"demo",
-	                "author":"hizzgdev@163.com",
-	                "version":"0.2",
+	                "name": "demo",
+	                "author": "hizzgdev@163.com",
+	                "version": "0.2",
 	            },
 	            "format":"node_array",
 	            "data":[
 	                {"id": "root", "isroot": true, "topic": "计算机"},
 	                {"id": "sub1", "parentid": "root", "topic": "工具", "background-color": "#0000ff"},//
-	                {"id": "sub11", "parentid": "sub1", "topic": "Chocolatey(命令行软件包管理)"},
+	                {"id": "sub11", "parentid": "sub1", "topic": "Chocolatey(命令行软件包管理)"},//
+	                {"id": "sub12", "parentid": "sub1", "topic": "Composer(PHP5以上 的一个依赖管理工具)"},
+
 	                {"id": "sub2", "parentid": "root", "topic": "其他"},
 	                {"id": "sub3", "parentid": "root", "topic": "前端"},
+
+	                {"id": "sub32", "parentid": "sub3", "topic": "其他"},
+
+	                {"id": "sub321", "parentid": "sub32", "topic": "jasmine"},
+	                {"id": "sub322", "parentid": "sub32", "topic": "phantomjs"},
+	                {"id": "sub323", "parentid": "sub32", "topic": "karma"},
+
 	                {"id": "sub31", "parentid": "sub3", "topic": "js"},
 	                {"id": "sub311", "parentid": "sub31", "topic": "es6"},
 	                {"id": "sub3111", "parentid": "sub311", "topic": "let和const命令"},
@@ -55,7 +64,21 @@
 	                {"id": "sub3115", "parentid": "sub311", "topic": "数值的扩展"},
 	                {"id": "sub3116", "parentid": "sub311", "topic": "数组的扩展"},
 	                {"id": "sub3117", "parentid": "sub311", "topic": "8.函数的扩展"},
-
+	                {"id": "sub3118", "parentid": "sub311", "topic": "9.对象的扩展"},
+					{"id": "sub3119", "parentid": "sub311", "topic": "10.Symbol"},
+					{"id": "sub31110", "parentid": "sub311", "topic": "11.Proxy和Reflect"},
+					{"id": "sub31211", "parentid": "sub311", "topic": "12.Set和Map数据结构"},
+					{"id": "sub31212", "parentid": "sub311", "topic": "13.Iterator和for...of循环"},
+					{"id": "sub31213", "parentid": "sub311", "topic": "14.Generator 函数"},
+					{"id": "sub31214", "parentid": "sub311", "topic": "15.Promise对象"},
+					{"id": "sub31215", "parentid": "sub311", "topic": "16.异步操作和Async函数(看不下去)"},
+					{"id": "sub31216", "parentid": "sub311", "topic": "17.Class"},
+					{"id": "sub31217", "parentid": "sub311", "topic": "18.修饰器"},
+					{"id": "sub31218", "parentid": "sub311", "topic": "19.Module"},
+					{"id": "sub31219", "parentid": "sub311", "topic": "20.编程风格"},
+					{"id": "sub31220", "parentid": "sub311", "topic": "21.读懂 ECMAScript 规格"},
+					{"id": "sub31221", "parentid": "sub311", "topic": "22.二进制数组"},
+					{"id": "sub31222", "parentid": "sub311", "topic": "23.SIMD"},
 
 	                {"id": "sub4", "parentid": "root", "topic": "python"},
 	                {"id": "sub42", "parentid": "sub4", "topic": "4.2字符串和编码"},
@@ -67,6 +90,7 @@
 	                {"id": "sub52", "parentid": "sub4", "topic": "5.2定义函数"},
 	                {"id": "sub53", "parentid": "sub4", "topic": "5.3函数的参数"},
 	                {"id": "sub54", "parentid": "sub4", "topic": "5.4递归函数"},
+
 	                /*{"id":"sub1", "parentid":"root", "topic":"sub1", "background-color":"#0000ff"},
 	                {"id":"sub11", "parentid":"sub1", "topic":"sub11"},
 	                {"id":"sub12", "parentid":"sub1", "topic":"sub12"},
