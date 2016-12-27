@@ -17,7 +17,7 @@ http.createServer( function (request, response) {
          // HTTP 状态码: 404 : NOT FOUND
          // Content Type: text/plain
          response.writeHead(404, {'Content-Type': 'text/html'});
-      }else{
+      }else {
          // HTTP 状态码: 200 : OK
          // Content Type: text/plain
          response.writeHead(200, {'Content-Type': 'text/html'});

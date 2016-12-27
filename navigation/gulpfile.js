@@ -21,6 +21,7 @@ var oEnvironment = fileConfig.oEnvironment;
 var oFile = fileConfig.oFile;
 
 var source = oEnvironment.source;
+var styleFrameUrl = oFile.styleFrameUrl;
 var styleFrame = oFile.styleFrame;
 var styleSkins = oFile.styleSkins;
 
@@ -49,8 +50,8 @@ var paths = {
 	src_css: 				source + "/css/**/*.css",
 	src_less_all: 			source + "/css/**/*.less",
 	src_less: 				source + "/css/*.less",
-	src_frame_style:		source + styleFrame,
-	src_skins_style:		source + styleSkins,
+	//src_frame_style:		source + styleFrame,
+	//src_skins_style:		source + styleSkins,
 	src_fonts:				source + "/fonts/**/*",
 
 	src_js_css: 			source + "/js/**/*.css",
@@ -69,7 +70,12 @@ var paths = {
 	//dist_plugins: 			targetDirectory + "/plugins",
 	dist_css: 				targetDirectory + "/css",
 	dist_images: 			targetDirectory + "/images",
-	dist_pic: 				targetDirectory + "/pic"
+	dist_pic: 				targetDirectory + "/pic",
+
+	src_frame_url_style:	"../" + styleFrameUrl,
+	src_frame_style:		"../" + styleFrame,
+	src_skins_style:		"../" + styleSkins,
+
 	// main_js: "main.js",
 	// rev_css: "dist/rev/css"
 };
